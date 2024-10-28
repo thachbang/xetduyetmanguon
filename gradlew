@@ -50,7 +50,7 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 MAX_FD="maximum"
 
 warn () {
-    echo "$*"
+    "$*"
 }
 
 die () {
@@ -62,7 +62,7 @@ die () {
 
 # OS specific support (must be 'true' or 'false').
 cygwin=false
-msys=false
+s=false
 darwin=false
 nonstop=false
 case "`uname`" in
